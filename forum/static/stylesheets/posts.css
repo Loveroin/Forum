@@ -1,0 +1,69 @@
+/* Posts 页面全局样式 */
+.posts-container {
+    max-width: 800px;
+    margin: 0 auto; /* 居中布局 */
+    padding: 20px;
+    background-color: #f8f9fa; /* 浅灰色背景 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 每个帖子卡片的样式 */
+.post-item {
+    border: 1px solid #ddd; /* 边框 */
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-item:hover {
+    transform: translateY(-5px); /* 悬浮效果 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 加强阴影 */
+}
+
+/* 按钮样式 */
+.btn {
+    border-radius: 20px;
+}
+
+.btn-danger {
+    background-color: #e74c3c; /* 自定义红色 */
+    border: none;
+}
+
+.btn-warning {
+    background-color: #f1c40f; /* 自定义黄色 */
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* 修改帖子标题的样式 */
+.post-item .card-title {
+    font-size: 1.5rem; /* 调整字体大小 */
+    font-weight: bold; /* 设置加粗 */
+    color: #333; /* 自定义颜色 (可选) */
+    margin-bottom: 10px; /* 调整标题与内容的间距 */
+}
+
+/* 确保卡片本身是相对定位 */
+.post-item {
+    position: relative;
+}
+
+/* 覆盖 stretched-link 的优先级 */
+.btn-container a {
+    position: relative; /* 将按钮设置为相对定位，覆盖 stretched-link */
+    z-index: 1; /* 提升按钮的层级 */
+}
+
+/* 保证 stretched-link 正常生效 */
+.stretched-link {
+    z-index: 0; /* 让链接在按钮下方 */
+}
+
+/* 可选样式：按钮悬停时的效果 */
+.btn-container a:hover {
+    opacity: 0.9; /* 悬停时稍微改变透明度 */
+}
