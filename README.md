@@ -65,8 +65,8 @@ This project is a forum application designed to facilitate user interaction thro
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/flask-forum-app.git
-   cd flask-forum-app
+   git clone https://github.com/Loveroin/Forum
+   cd Forum
    ```
 
 2. Create a virtual environment and activate it:
