@@ -71,8 +71,8 @@ This project is a forum application designed to facilitate user interaction thro
 
 2. Create a virtual environment and activate it:
    ```bash
-   python -m venv forum_env
-   source forum_env/bin/activate  # On Windows: forum_env\Scripts\activate
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    ```
 
 3. Install dependencies:
@@ -137,7 +137,7 @@ forum/
 │   └── view_post.html   # View individual post
 ├── instance/
 │   └── site.db          # SQLite database
-├── forum_env/           # Virtual environment
+├── .venv/               # Virtual environment
 ├── forum/               # Main application package
 │   ├── __init__.py      # App initialization
 │   ├── forms.py         # Form classes
